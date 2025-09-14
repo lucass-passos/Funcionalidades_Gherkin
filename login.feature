@@ -1,12 +1,12 @@
-Feature: Login na plataforma
+Funcionalidade: Login na plataforma
   Como cliente da EBAC-SHOP
   Quero fazer o login na plataforma
   Para visualizar meus pedidos
 
-  Background:
+  Contexto:
     Dado que estou na página de login da EBAC-SHOP
 
-  Scenario Outline: Login com diferentes combinações de credenciais
+  Cenário: Login com diferentes combinações de credenciais
     Quando eu inserir o usuário "<usuario>" e a senha "<senha>"
     E clicar no botão "Entrar"
     Então deve exibir "<mensagem>"

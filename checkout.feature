@@ -1,17 +1,17 @@
-Feature: Cadastro no Checkout
+Funcionalidade: Cadastro no Checkout
   Como cliente da EBAC-SHOP
   Quero concluir meu cadastro
   Para finalizar minha compra
 
-  Background:
+  Contexto:
     Dado que estou na tela de cadastro do checkout
 
-  Scenario: Cadastro com campos obrigatórios preenchidos corretamente
+  Cenário: Cadastro com campos obrigatórios preenchidos corretamente
     Quando eu preencher todos os campos obrigatórios com dados válidos
     E clicar em "Cadastrar"
     Então deve exibir a mensagem "Cadastro realizado com sucesso"
 
-  Scenario Outline: Tentativa de cadastro inválido
+  Cenário: Tentativa de cadastro inválido
     Quando eu preencher os campos com <nome>, <email> e <senha>
     E clicar em "Cadastrar"
     Então deve exibir a mensagem "<mensagem>"
